@@ -1,0 +1,3 @@
+<template>
+    <div><h1>home _1 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum debitis non nisi, cupiditate ipsam quas dolores deserunt placeat necessitatibus exercitationem voluptas eaque similique quae minima dolorum aliquid iusto expedita culpa, ut laborum assumenda esse error odit porro! Nisi consequatur fugiat enim, itaque ducimus aperiam tempora, cupiditate iure dolores quis deserunt?</h1></div>
+</template>

@@ -6,11 +6,7 @@
       flat
     >
       <v-container class="py-0 fill-height">
-        <v-avatar
-          class="mr-10"
-          color="grey darken-1"
-          size="32"
-        ></v-avatar>
+        <h1 class="text-uppercase text-h5 font-weight-bold"><span class="secondary--text">my</span>Logo</h1>
         <v-spacer></v-spacer>
         <!-- this is looping through the list of all the routes in vue router -->
         <v-btn
@@ -24,13 +20,15 @@
 
         <v-spacer></v-spacer>
         <v-btn color="primary" rounded>
-          click
+          sign up
         </v-btn>
       </v-container>
     </v-app-bar>
 
     <v-main class="grey lighten-3">
-      <router-view></router-view>
+      <v-container class="fill-height">
+        <router-view></router-view>
+      </v-container>
     </v-main>
   </v-app>
 </template>
