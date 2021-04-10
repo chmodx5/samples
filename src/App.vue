@@ -25,10 +25,8 @@
       </v-container>
     </v-app-bar>
 
-    <v-main class="grey lighten-3">
-      <v-container class="fill-height">
-        <router-view></router-view>
-      </v-container>
+    <v-main class="lighten-3">
+      <router-view></router-view>
     </v-main>
   </v-app>
 </template>
