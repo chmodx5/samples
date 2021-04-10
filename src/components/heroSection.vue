@@ -12,7 +12,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, autem! Excepturi, minus quia cum beatae nulla quos ducimus consequuntur at!</p>
                     <v-btn color="primary" rounded>learn more</v-btn>
                     <v-row class="mt-5">
-                        <v-col v-for="my_itm in my_itms" :key="my_itm" class="">
+                        <v-col v-for="my_itm in my_itms" :key="my_itm.id" class="">
                             <p class="font-weight-bold text-h6 text-capitalize"> {{my_itm.text}} <span>+</span></p>
                             <p class="text-subtitle-2">{{my_itm.total}}</p>
                         </v-col>
