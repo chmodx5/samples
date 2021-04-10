@@ -6,7 +6,7 @@
       flat
     >
       <v-container class="py-0 fill-height">
-        <h1 class="text-uppercase text-h5 font-weight-bold"><span class="secondary--text">my</span>Logo</h1>
+        <h1 class="text-uppercase text-h5 font-weight-bold"><span class="secondary--text">war</span>thog</h1>
         <v-spacer></v-spacer>
         <!-- this is looping through the list of all the routes in vue router -->
         <v-btn
