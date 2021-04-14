@@ -44,14 +44,14 @@ export default {
                 {
                     title: 'professional',
                     is_primary: true,
-                    price: '40',
+                    price: '60',
                     desc: 'this is all i could think of',
                     link: '/'
                 },
                 {
                     title: 'enterpice',
                     is_primary: false,
-                    price: '40',
+                    price: '80',
                     desc: 'this is all i could think of',
                     link: '/'
                 },
