@@ -1,37 +1,37 @@
 <template>
   <div>
-    <hero-section />
+    <!-- <hero-section />
     <small-banner-section />
     <services-section />
     <pricing-section />
     <customers-section />
     <extra-info-section-left />
-    <extra-info-section-right />
+    <extra-info-section-right /> -->
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import heroSection from '@/components/heroSection.vue'
-import smallBannerSection from '@/components/smallBannerSection.vue'
-import servicesSection from '@/components/servicesSection.vue'
-import pricingSection from '@/components/pricingSection.vue'
-import customersSection from '@/components/customersSection.vue'
-import extraInfoSectionLeft from '@/components/extraInfoSectionLeft.vue'
-import extraInfoSectionRight from '@/components/extraInfoSectionRight.vue'
+// import heroSection from '@/components/heroSection.vue'
+// import smallBannerSection from '@/components/smallBannerSection.vue'
+// import servicesSection from '@/components/servicesSection.vue'
+// import pricingSection from '@/components/pricingSection.vue'
+// import customersSection from '@/components/customersSection.vue'
+// import extraInfoSectionLeft from '@/components/extraInfoSectionLeft.vue'
+// import extraInfoSectionRight from '@/components/extraInfoSectionRight.vue'
 
 
 
 export default {
   name: 'Home',
   components: {
-    heroSection,
-    smallBannerSection,
-    servicesSection,
-    pricingSection,
-    customersSection,
-    extraInfoSectionLeft,
-    extraInfoSectionRight
+    // heroSection,
+    // smallBannerSection,
+    // servicesSection,
+    // pricingSection,
+    // customersSection,
+    // extraInfoSectionLeft,
+    // extraInfoSectionRight
   }
 }
 </script>
