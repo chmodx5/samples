@@ -1,37 +1,20 @@
 <template>
   <div>
-    <!-- <hero-section />
-    <small-banner-section />
-    <services-section />
-    <pricing-section />
-    <customers-section />
-    <extra-info-section-left />
-    <extra-info-section-right /> -->
+    <mod-hero></mod-hero>
+    <mod-hero-one></mod-hero-one>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import heroSection from '@/components/heroSection.vue'
-// import smallBannerSection from '@/components/smallBannerSection.vue'
-// import servicesSection from '@/components/servicesSection.vue'
-// import pricingSection from '@/components/pricingSection.vue'
-// import customersSection from '@/components/customersSection.vue'
-// import extraInfoSectionLeft from '@/components/extraInfoSectionLeft.vue'
-// import extraInfoSectionRight from '@/components/extraInfoSectionRight.vue'
 
-
+import modHero from '@/components/mod_sections/mod_hero/modHero.vue'
+import modHeroOne from '@/components/mod_sections/mod_hero/modHeroOne.vue'
 
 export default {
   name: 'Home',
   components: {
-    // heroSection,
-    // smallBannerSection,
-    // servicesSection,
-    // pricingSection,
-    // customersSection,
-    // extraInfoSectionLeft,
-    // extraInfoSectionRight
+    modHero,
+    modHeroOne
   }
 }
 </script>

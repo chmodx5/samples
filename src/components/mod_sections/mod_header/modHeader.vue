@@ -4,6 +4,7 @@
       height="50"
       color="white"
       elevate-on-scroll
+      fixed
     >
       <v-container class="py-0 fill-height">
         <h1 class="text-uppercase text-h5 font-weight-bold"><span class="primary--text">war</span>thog</h1>
