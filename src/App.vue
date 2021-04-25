@@ -1,5 +1,6 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" >
+    
     <mod-header></mod-header>
 
     <v-main class="lighten-3">

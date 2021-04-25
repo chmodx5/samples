@@ -2,7 +2,7 @@
     <v-app-bar
       app
       height="50"
-      color="white"
+      
       elevate-on-scroll
       fixed
     >
@@ -20,7 +20,7 @@
         >
           {{ route.name }}
         </v-btn>
-        <v-btn color="primary" flat depressed>
+        <v-btn color="primary" text depressed>
           sign up
         </v-btn>
       </v-container>
