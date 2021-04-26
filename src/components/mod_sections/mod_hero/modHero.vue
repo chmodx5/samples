@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss" scoped>
 .mod-hero{
-    height: 100vh;
+    height: 90vh;
     .styled-heading{
         display: inline-block;
         border: solid 3px ;
