@@ -2,12 +2,18 @@
     <v-container class="mod-hero">
         <v-row class="fill-height text-center" align="center" justify="center">
             <v-col lg="8">
-                <p class="text-uppercase text-h5 primary--text my-3">visual designer</p>
-                <p class="text-capitalize text-h3 styled-heading my-3">i'm someone else</p>
+                <p class="text-uppercase text-h5 primary--text my-3">
+                    {{ coloredHeading }}
+                </p>
+                <p class="text-capitalize text-h3 styled-heading my-3 text-bold">
+                     {{ heading }} 
+                </p>
                
-                <p class="text-subtitle-1 my-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium similique quo laboriosam eius. Optio, commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum incidunt, sit optio cumque perferendis accusantium.</p>
-                <v-btn color="primary" large>
-                    donwload cvs
+                <p class="text-h5 my-6">
+                    {{ text }}
+                </p>
+                <v-btn :to="btnLink" color="primary" large>
+                    {{ btnText }}
                 </v-btn>
                 <!-- <v-btn color="primary" @click="$vuetify.theme.dark =! $vuetify.theme.dark ">lnd</v-btn> -->
             </v-col>
@@ -21,6 +27,13 @@ export default {
     data(){
         return{
         }
+    },
+    props: {
+        coloredHeading: String,
+        heading: String,
+        text: String,
+        btnText: String,
+        btnLink: String
     }
 }
 </script>

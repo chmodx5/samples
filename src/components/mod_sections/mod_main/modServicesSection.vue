@@ -1,8 +1,8 @@
 <template>
     <mod-section secHeading='what i do'>
         <v-row>
-            <v-col md="4" v-for="service in myServices" :key="service.id">
-                <v-card class="pa-12" hover max-height="350">
+            <v-col md="4" v-for="service in services" :key="service.id">
+                <v-card class="pa-12" hover min-height="350">
                     <v-sheet
                         outlined
                         height="70"
@@ -34,29 +34,8 @@ export default {
     components: {
         modSection
     },
-    data(){
-        return{
-             myServices: [
-                 {
-                     icon: 'mdi-earth',
-                     heading: 'something somthing',
-                     desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro suscipit rerum commodi labore debitis nesciunt quibusdam est ipsum voluptatum?',
-                     link: '/'
-                 },
-                 {
-                     icon: 'mdi-earth',
-                     heading: 'something somthing',
-                     desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro suscipit rerum commodi labore debitis nesciunt quibusdam est ipsum voluptatum?',
-                     link: '/'
-                 },
-                 {
-                     icon: 'mdi-earth',
-                     heading: 'something somthing',
-                     desc: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro suscipit rerum commodi labore debitis nesciunt quibusdam est ipsum voluptatum?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus porro suscipit rerum commodi labore debitis nesciunt quibusdam est ipsum voluptatum?',
-                     link: '/'
-                 },
-             ]
-        }
+    props: {
+        services: Array,
     }
 }
 </script>

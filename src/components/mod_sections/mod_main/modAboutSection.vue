@@ -1,11 +1,12 @@
 <template>
-    <mod-section secHeading='about me'>
+    <mod-section :secHeading='sectionHeading'>
         <v-row>
-            <v-col md="4">
+            <v-col cols="12" md="4">
                 <v-img
                     :aspect-ratio="9/9"
-                    lazy-src="https://picsum.photos/id/11/10/6"
-                    src="https://picsum.photos/id/237/200/300"
+                    :lazy-src="lazyImg"
+                    :src="img"
+                    :alt="imgAlt"
                     height="100%"
                 ></v-img>
             </v-col>
@@ -14,7 +15,7 @@
                     <template v-slot:default>
                         <tbody>
                             <tr
-                            v-for="item in personal_info"
+                            v-for="item in info"
                             :key="item.id"
                             >
                             <td>
@@ -36,9 +37,13 @@
                     </template>
                 </v-simple-table>
                 <div class="mt-6">
-                    <h1 class="text-h5 text-capitalize mb-3">i am Someone E. Else and visual designer</h1>
-                    <p class="mb-6">Hi! My name is Someone E. Else. I am a Web Developer, and I'm very passionate and dedi my work. With 20 years experience as a professional</p>
-                    <v-btn color="primary">hire me </v-btn>
+                    <h1 class="text-h5 text-capitalize mb-3">
+                        {{ heading }}
+                    </h1>
+                    <p class="mb-6">
+                        {{ text }}
+                    </p>
+                    <v-btn :to="btnLink" color="primary"> {{ btnText }} </v-btn>
                 </div>
             </v-col>
         </v-row>
@@ -57,34 +62,19 @@ export default {
     },
     data(){
         return{
-            personal_info:[
-                {
-                    icon: 'mdi-gift',
-                    title: 'birthday',
-                    info: '02.06.1900',
-                },
-                {
-                    icon: 'mdi-book-open-outline',
-                    title: 'study',
-                    info: '02.06.1900',
-                },
-                {
-                    icon: 'mdi-earth',
-                    title: 'website',
-                    info: 'www.dummy.com',
-                },
-                {
-                    icon: 'mdi-pac-man',
-                    title: 'interest',
-                    info: 'reading',
-                },
-                {
-                    icon: 'mdi-map-marker',
-                    title: 'location',
-                    info: '402, random location',
-                },
-            ]   
         }
+    },
+    props:{
+        sectionHeading: String,
+        img : String,
+        lazyImg : String,
+        imgAlt: String,
+        info: Array,
+        heading: String,
+        text: String,
+        btnText: String,
+        btnLink: String,
+
     }
 }
 </script>
