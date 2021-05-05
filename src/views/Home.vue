@@ -8,20 +8,25 @@
       btn-link = "/"
     ></mod-hero>
     <mod-about-section 
-      section-heading= "about kwenda"
+      section-heading= "About us..."
       img= "https://source.unsplash.com/random"
       lazy-img= ""
       img-alt= ""
       :info="myInfo"
-      heading= "lorem df sd fas d"
-      text= "eDGASK SD  fdsjfh cgd hfd gfj jh gdghd ghdjh fjhkf jhdf gjh dghd jhfdgd gd gjdjgd jgd gd jd gdjgd t uf ukf yfk uyf kuyfyuk fykfjh fjf "
-      btn-text= "donwlaod cv"
-      btn-link= "/home"
+      heading= "Who are we?"
+      text= "WARTHOG is a team of like-minded individuals who have pooled together their specific skills to provide website design and development solutions to the ever-versatile and rapidly-growing Micro, Small, and Medium Enterprise sector.
+      We are driven to provide user-centred and customer-specific website solutions to the user who dares to want more from a website than the conventional website developer can provide.
+      Apart from Website Design and Development we also do the following"
+      btn-text= "Services"
+      btn-link= "/services"
     ></mod-about-section>
     <mod-services-section
       :services="services"
     ></mod-services-section>
-    <mod-portfolio-section></mod-portfolio-section>
+    <mod-portfolio-section
+      :categories="categories"
+      :categoryItems="categoryItems"
+    ></mod-portfolio-section>
     <mod-contact-section></mod-contact-section>
   </div>
 </template>
@@ -46,6 +51,16 @@ export default {
   },
   data(){
     return{
+      categoryItems:[
+        "e-commerce",
+        "business",
+        "organization"
+      ],
+      categories: [
+        "e-commerce",
+        "business",
+        "organization"
+      ],
       myInfo:[
         {
             icon: 'mdi-gift',

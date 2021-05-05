@@ -1,5 +1,5 @@
 <template>
-    <div class="about-section py-12" >
+    <div class="about-section py-12 text-center text-sm-center " >
         <v-container>
             <h1 class="text-capitalize about-section-heading text-h3 mb-6">
                 {{ secHeading }}

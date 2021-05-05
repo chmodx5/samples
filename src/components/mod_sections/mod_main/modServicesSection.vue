@@ -1,7 +1,7 @@
 <template>
     <mod-section secHeading='what i do'>
         <v-row>
-            <v-col md="4" v-for="service in services" :key="service.id">
+            <v-col cols="12" md="4" v-for="service in services" :key="service.id">
                 <v-card class="pa-12" hover min-height="350">
                     <v-sheet
                         outlined

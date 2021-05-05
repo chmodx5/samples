@@ -1,7 +1,13 @@
 <template>
-    <mod-section :secHeading='sectionHeading'>
-        <v-row>
-            <v-col cols="12" md="4">
+    <mod-section :secHeading='sectionHeading' id="about" class="">
+        <v-row >
+            <v-col 
+                cols="12" 
+                sm="8" 
+                offset-sm="2"
+                md=""
+                lg=""
+            >
                 <v-img
                     :aspect-ratio="9/9"
                     :lazy-src="lazyImg"
@@ -10,7 +16,13 @@
                     height="100%"
                 ></v-img>
             </v-col>
-            <v-col md="8" class="px-6"> 
+            <v-col 
+                cols="12"
+                sm="12"
+                md=""
+                lg=""
+                class="px-6"
+            > 
                 <v-simple-table>
                     <template v-slot:default>
                         <tbody>

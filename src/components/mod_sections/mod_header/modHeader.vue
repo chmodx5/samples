@@ -20,7 +20,7 @@
         >
           {{ route.name }}
         </v-btn>
-        <v-btn color="primary" text depressed>
+        <v-btn color="primary" @click="$vuetify.goTo('#about')" text depressed>
           sign up
         </v-btn>
       </v-container>
